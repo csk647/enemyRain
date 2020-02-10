@@ -11,7 +11,7 @@ class ghost{
 // 왜 아이디에는 따옴표가 들어가면 안돼?
      }
     makeGhost = () => {
-        if(howMany.length < 1){
+        if(howMany.length < 10){
             // 클래스로 귀신 불러서 .length 이용해서 귀신 갯수 관리하기
     const randomX = Math.floor(Math.random() * 765) + 1;
     // 이게 밖에 있으면 랜덤 숫자가 한개만 나오고 귀신은 여러개 나온다. 이게 안에 있어야 계속 새로운 숫자가 나온다.
@@ -40,7 +40,6 @@ class ghost{
         bg.appendChild(this.ghost);
         this.ghost.style.top = parseInt(this.ghost.style.top) + 2+'px';
         if( parseInt(this.ghost.style.top) > 550){
-            // this.ghost.parentNode.removeChild(this.ghost)
             this.ghost.parentNode.removeChild(this.ghost)
             clearInterval(this.movement)
             console.log(this.ghost.style.top)
