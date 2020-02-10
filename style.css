@@ -53,6 +53,6 @@ body {
 .enemyDie{
     background-position: -70px;
 }
-#testid{
-    top:10px;
+.dieGhost{
+    background-position: -45px 0;
 }
